@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/css/user_sign_in.css">
+
+
+
+<!-- <h1>Sign In</h1>
+
+<form action="/users/create-session" method="POST">
+    <input type="email" name="email" placeholder="Email"  required>
+    <input type="password" name="password" placeholder="Password"  required>
+    <input type="submit" value="Sign In">
+
+</form>
+
+<p>
+    <a href="/users/auth/google">Google Sign In/Sign Up</a>
+</p> -->
+
+ 
+
+<h1>Sign Up</h1>
+
+<form action="/users/create" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="password" name="password" placeholder="Password" required>
+  <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+  <input type="submit" value="Sign Up">
+
+</form>
+
+
+<p>
+    <a href="/users/auth/google"><img style="height: 30px ;width:40px;" src="https://image.flaticon.com/icons/png/512/281/281764.png"></a>
+</p>
+ 
+
+ 
+ <!-- <div class="containerS right-panel-active">
+	 <!-- Sign Up  
+	<div class="container__form container--signup">
+		<form action="/users/create" method="POST" class="form" id="form1">
+			<h2 class="form__title">Sign Up</h2>
+			<input type="text" name="name" placeholder="Your Name" required class="input" />
+			<input  type="email" name="email" placeholder="Your Email" required class="input" />
+			<input type="password" name="password" placeholder="Password" required class="input" />
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required class="input">
+			<input type="submit" value="Sign Up" class="btn"> 
+		</form>
+	</div>  
+
+	 Sign In 
+	<div class="container__form container--signin">
+		<form action="/users/create-session" method="POST" class="form" id="form2">
+			<h2 class="form__title">Sign In</h2>
+			<input  type="email" name="email" placeholder="Email"  required class="input" />
+			<input type="password" name="password" placeholder="Password"  required class="input" />
+			<a href="/" class="link">Forgot your password?</a>
+			<input  type="submit" value="Sign In" class="btn"> 
+		</form>
+	</div>
+
+	<!-- Overlay  
+	<div class="container__overlay">
+		<div class="overlay">
+			<div class="overlay__panel overlay--left">
+				<button class="btn" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay__panel overlay--right">
+				<button class="btn" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+  -->
+
+
+<script>
+
+    const signInBtn = document.getElementById("signIn");
+    const signUpBtn = document.getElementById("signUp");
+    const fistForm = document.getElementById("form1");
+    const secondForm = document.getElementById("form2");
+    const container = document.querySelector(".containerS");
+    
+    signInBtn.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+    });
+    
+    signUpBtn.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+    });
+    
+    fistForm.addEventListener("submit", (e) => e.preventDefault());
+    secondForm.addEventListener("submit", (e) => e.preventDefault());
+    
+    </script>
