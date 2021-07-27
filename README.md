@@ -1,5 +1,5 @@
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" alt="Logo" width="150" height="150" />
-</p>
+ 
  
 <p align="center">
 <a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@appnest/readme.svg" height="20"/></a>
@@ -14,7 +14,7 @@
 
 
 <p align="center">
-<img src="https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png" alt="Logo" width="550" height="500" />
+<img src="https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png" alt="Social Netwprk" width="550" height="500" />
 
 
 </p>
