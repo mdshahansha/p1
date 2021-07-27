@@ -14,7 +14,8 @@
 
 
 <p align="center">
-<img src="https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png" alt="Social Network" width="550" height="500" />
+![Social Network](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
+
 
 
 </p>
