@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  <img src="https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png" alt="Demo" width="800" />
+ ![Color Calendar](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
 </p>
  
  <details>
