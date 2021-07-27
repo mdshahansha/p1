@@ -13,8 +13,8 @@
 <br />
 
  
-![Social Network](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
-![App Screenshot](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
+![Social](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
+![App](https://ninjasfiles.s3.amazonaws.com/810296d85f8594453c9bd7c9ea98b9fe_raihan_image_social0main.png)
 
 
 
