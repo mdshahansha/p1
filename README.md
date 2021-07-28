@@ -75,14 +75,13 @@ are built to handle specific development aspects of an application.
 	* [Blueprint](#blueprint)
 	* [Usage](#usage)
 	* [Configuration](#configuration)
+
 * [➤ Templates](#-templates)
 	* [Title](#title)
 	* [Logo](#logo)
 	* [Badges](#badges)
 	* [Description](#description)
 	* [Table of Contents](#table-of-contents)
-
-
 
 * [➤Setting Up Directory Structure](#-directory)
 	* [Starting Express  ](#startingexpress )
@@ -127,10 +126,12 @@ are built to handle specific development aspects of an application.
 	* [ Setting up Mongo store for session cookies ](#Setting-up-Mongo-store-for-session-cookies )
 	* [ Creating Sign Out ](#Creating-Sign-Out)
 
+
 * [➤ SASS](#-a-bit-about-this-readme)
 	* [ SCSS or SASS? ](#SCSS-or-SASS)
 	* [ Setting Up SCSS ](#Setting-Up-SCSS )
 	* [  Using SCSS](#Using-SCSS)
+
 
 * [➤ Database Relations (Posts, Comments)](#-database-realtion)
 	* [ Node.js:: Explaining ](#Node.js:-Explaining)
@@ -142,6 +143,7 @@ are built to handle specific development aspects of an application.
 	* [ Nesting Population:: Display Comments and Related User ](#Nesting-Population::-Display-Comments-and-Related-User )
 	* [ Adding Comments to the DB ](#Adding-Comments-to-the-DB )
 
+
 * [➤ Deleting and Updating Object in Database + Distributing Views!](#-DeltingandpdatingObject )  
 	* [ Deleting a Post (Authorized)](#Deleting-a-Post-(Authorized) )
 	* [ Deleting a Comment (Authorized) ](#Deleting-a-Comment-(Authorized)-)
@@ -149,9 +151,11 @@ are built to handle specific development aspects of an application.
 	* [User Profile links  ](#User-Profile-links )
 	* [ Updating a User’s profile ](#Updating-a-User’s-profile )
 
+
 * [➤  Async Await + Error Handling](#Async-Await-+-Error-Handling )
 	* [Converting to Async Await ](#Converting-to-Async-Await )
 	* [ Converting More Code to Async Await ](#-Converting-More-Code-to-Async-Await )
+
 
 * [➤ Flash Messages:: Introduction ](#Flash-MessagesIntroduction )
 	* [ Creating Flash Messages ](#Creating-Flash-Messages )
@@ -163,15 +167,17 @@ are built to handle specific development aspects of an application.
 	* [ Creating a Post:: Sending Data ](#Creating-a-Post::-Sending-Data )
 	* [ Creating a Post:: Receiving Data ](#Creating-a-Post::-Receiving-Data  )
 	* [ Deleting a Post ](#Deleting-a-Post )
-	 
+
+
 * [➤ File Upload ](#file-uploading )
 	* [ Uploading Files: How Does It Work? ](#Uploading-Files:-How-Does-It-Work? )
-	* [ Installing Multer + Documentation ](#Installing-Multer-+-Documentation )
+	* [ Installing Multer + Documentation ](#Installing-Mult+-Documentation)
 	* [ Configuring Multer for User Avatar ](#Configuring-Multer-for-User-Avatar )
 	* [ Saving File from Params ](#Saving-File-from-Params )
 	* [ Showing the Avatar, Connecting the Dots ](#Showing-the-Avatar-Connecting-the-Dots )
 	* [ Edge Case:: Replacing an Avatar  ](#Edge-Case::-Replacing-an-Avatar )
  
+
 * [➤APIs  ](#Api )
 	* [ APIs:: Why and What ](#APIs::-Why-and-What )
 	* [  The Postman](#The-Postman )
@@ -182,6 +188,7 @@ are built to handle specific development aspects of an application.
 	* [ Setting Up Passport JWT ](#Setting-Up-Passport-JWT )
 	* [Creating a Token  ](#Creating-a-Token)
 	* [ Authentication And Authorization ](#Authentication-And-Authorization )
+
 
 * [➤ Social Authentication  ](#Social-Authentication )
 	* [ Creating Credentials on Google ](#Creating-Credentials-on-Google )
@@ -202,7 +209,7 @@ are built to handle specific development aspects of an application.
 * [ ➤  Friends + Likes ](#Friends-+-Likes )
 	* [ Polymorphic Relations ](#Polymorphic-Relations )
 	* [ Schema Setup:: Likes ](#Schema-Setup::-Likes )
-  * [Actions and Routes:: Likes  ](#Actions-and-Routes::-Likes  )
+* [Actions and Routes:: Likes  ](#Actions-and-Routes::-Likes  )
 	* [ Making Friendships ](#Making-Friendships )
 	* [Understanding the Code:: Friendship  ](#Understanding-the-Code::-Friendship ) 
 
