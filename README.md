@@ -26,24 +26,28 @@ Start with most important part in code is authentication in  code,whenever we tr
 or sign up in page ,you get too the some data is specific  for you only and your email or
  your on wall render on filed,this is possible beacuse you logged in as you ,you establish
  your identity to that  website,this is more fundamental and core  part for every website.
- 
+ <br/>
 And we recieved some email notification  from this  website as your post got like,comments,
 or you active online you will recive that email or that is something while user look up to. 
-
+<br/><p>
 Deleting and updating objects in database + distributing Views ,so we need authorize which user 
 have to delete comment which  not,more  over user can edit his/her name ,change profile,
 email and <h2>a many more functinally are done in this project. </h2>
-
+</p>
 
 <sub>
 </p>
 
 <br />
+<br/>
+<br/>
 
-# MVC Framework
-The MVC (Model-View-Controller) is an architectural pattern that
-separates an application into three main logical components:
+## MVC Framework
+<p>
+ The MVC (Model-View-Controller) is an architectural pattern that
+separates an application into three main logical components:<br/>
 the model, the view, and the controller. Each of these components
+</p>
 are built to handle specific development aspects of an application. 
 
 
@@ -65,25 +69,29 @@ are built to handle specific development aspects of an application.
 
 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]( )
 
 # ➤ 📖 Working With these 
+<br/>
 
 * [➤ Installation](#-installation)
-* [➤ Getting Started (quick)](#-getting-started-quick)
-* [➤ Getting Started (slower)](#-getting-started-slower)
-	* [Blueprint](#blueprint)
-	* [Usage](#usage)
-	* [Configuration](#configuration)
+1. [➤ Getting Started (quick)](#-getting-started-quick)
+   * [Blueprint](#blueprint)
+   * [Usage](#usage)
+   * [Configuration](#configuration)
 
-* [➤ Templates](#-templates)
+<br/>
+
+2. [➤ Templates](#-templates)
 	* [Title](#title)
 	* [Logo](#logo)
 	* [Badges](#badges)
 	* [Description](#description)
 	* [Table of Contents](#table-of-contents)
+<br/>
+<br/>
 
-* [➤Setting Up Directory Structure](#-directory)
+3. [➤Setting Up Directory Structure](#-directory)
 	* [Starting Express  ](#startingexpress )
 	* [ Adding Git & NPM Start ](#add-git)
 	* [ Setting up the Express Router ](#setting-up-router )
@@ -94,20 +102,24 @@ are built to handle specific development aspects of an application.
 	* [ Implementing Partials ](#implimenting-particles)
 	* [ Static Files For Pages ](#static-files)
 
+<br/>
+<br/>
 
 
-* [➤ Databases:: An Introduction](#-DatabasesAnIntroduction)
+4. [➤ Databases:: An Introduction](#-DatabasesAnIntroduction)
 	* [MongoDB :: Terms ](#mongodb)
 	* [Creating the DB Schema ](#Schema)
 	* [Fetching Data from DB  ](#populating )
 	* [ Deleting from DB ](#deleteDB )
-  * [ Connecting to MongoDB using Mongoose](#-connecting-Mongoose)
-	* [ Linking our MongoDB using Mongoose ](#likingMongoDB)
+   * [ Connecting to MongoDB using Mongoose](#-connecting-Mongoose)
+   * [ Linking our MongoDB using Mongoose ](#likingMongoDB)
 
 
+<br/>
+<br/>
 
 
-* [➤Manual Authentication](#-manual-authentication)
+5. [➤Manual Authentication](#-manual-authentication)
 	* [ Setting up User Schema ](#setup_userSchema)
 	* [ Rendering Pages for Sign up and Sign in ](#renderpages)
 	* [ Explaining Cookies  ](#cookies)
@@ -115,9 +127,11 @@ are built to handle specific development aspects of an application.
 	* [ User Sign Up](#user-signup)
 	* [ User Sign In ](#userSignin)
 	* [ Show Details of Signed in User ](#showdetail )
+<br/>
+<br/>
 
 
-* [➤ Authentication Using Passport](#-Authentication-Using-Passport)
+6. [➤ Authentication Using Passport](#-Authentication-Using-Passport)
 	* [ Glancing through and Installing Passport.js ](#install-passport )
 	* [ Setting up Passport.js ](#set-up-passport)
 	* [ Express sessions and using passport for authentication ](#Express-sessions-and-using-passport-for-authentication )
@@ -126,14 +140,18 @@ are built to handle specific development aspects of an application.
 	* [ Setting up Mongo store for session cookies ](#Setting-up-Mongo-store-for-session-cookies )
 	* [ Creating Sign Out ](#Creating-Sign-Out)
 
+<br/>
+<br/>
 
-* [➤ SASS](#-a-bit-about-this-readme)
+7. [➤ SASS](#-a-bit-about-this-readme)
 	* [ SCSS or SASS? ](#SCSS-or-SASS)
 	* [ Setting Up SCSS ](#Setting-Up-SCSS )
 	* [  Using SCSS](#Using-SCSS)
 
+<br/>
+<br/>
 
-* [➤ Database Relations (Posts, Comments)](#-database-realtion)
+8. [➤ Database Relations (Posts, Comments)](#-database-realtion)
 	* [ Node.js:: Explaining ](#Node.js:-Explaining)
 	* [ Creating Schema for Posts ](#Creating-Schema-for-Posts )
 	* [ Saving Posts to the DB ](#Saving-Posts-to-the-DB )
@@ -143,42 +161,54 @@ are built to handle specific development aspects of an application.
 	* [ Nesting Population:: Display Comments and Related User ](#Nesting-Population::-Display-Comments-and-Related-User )
 	* [ Adding Comments to the DB ](#Adding-Comments-to-the-DB )
 
+<br/>
+<br/>
 
-* [➤ Deleting and Updating Object in Database + Distributing Views!](#-DeltingandpdatingObject )  
+9. [➤ Deleting and Updating Object in Database + Distributing Views!](#-DeltingandpdatingObject )  
 	* [ Deleting a Post (Authorized)](#Deleting-a-Post-(Authorized) )
 	* [ Deleting a Comment (Authorized) ](#Deleting-a-Comment-(Authorized)-)
 	* [ Distributing the Code into Partials ](#Distributing-the-Code-into-Partials )
 	* [User Profile links  ](#User-Profile-links )
 	* [ Updating a User’s profile ](#Updating-a-User’s-profile )
+<br/>
+<br/>
 
 
-* [➤  Async Await + Error Handling](#Async-Await-+-Error-Handling )
+10. [➤  Async Await + Error Handling](#Async-Await-+-Error-Handling )
 	* [Converting to Async Await ](#Converting-to-Async-Await )
 	* [ Converting More Code to Async Await ](#-Converting-More-Code-to-Async-Await )
 
+<br/>
+<br/>
 
-* [➤ Flash Messages:: Introduction ](#Flash-MessagesIntroduction )
+11. [➤ Flash Messages:: Introduction ](#Flash-MessagesIntroduction )
 	* [ Creating Flash Messages ](#Creating-Flash-Messages )
 	* [Introducing Noty  ](#Introducing-Noty )
 	* [ Adding Flash Messages to more Actions ](#Adding-Flash-Messages-to-more-Actions )
+<br/>
+<br/>
  
   
-* [➤ Converting to Ajax ](#Converting-to-Ajax )
+12. [➤ Converting to Ajax ](#Converting-to-Ajax )
 	* [ Creating a Post:: Sending Data ](#Creating-a-Post::-Sending-Data )
 	* [ Creating a Post:: Receiving Data ](#Creating-a-Post::-Receiving-Data  )
 	* [ Deleting a Post ](#Deleting-a-Post )
 
+<br/>
+<br/>
 
-* [➤ File Upload ](#file-uploading )
+13. [➤ File Upload ](#file-uploading )
 	* [ Uploading Files: How Does It Work? ](#Uploading-Files:-How-Does-It-Work? )
 	* [ Installing Multer + Documentation ](#Installing-Mult+-Documentation)
 	* [ Configuring Multer for User Avatar ](#Configuring-Multer-for-User-Avatar )
 	* [ Saving File from Params ](#Saving-File-from-Params )
 	* [ Showing the Avatar, Connecting the Dots ](#Showing-the-Avatar-Connecting-the-Dots )
 	* [ Edge Case:: Replacing an Avatar  ](#Edge-Case::-Replacing-an-Avatar )
+<br/>
+<br/>
  
 
-* [➤APIs  ](#Api )
+14. [➤APIs  ](#Api )
 	* [ APIs:: Why and What ](#APIs::-Why-and-What )
 	* [  The Postman](#The-Postman )
 	* [ Setting Up The Directory Structure ](#Setting-Up-The-Directory-Structure)
@@ -188,15 +218,19 @@ are built to handle specific development aspects of an application.
 	* [ Setting Up Passport JWT ](#Setting-Up-Passport-JWT )
 	* [Creating a Token  ](#Creating-a-Token)
 	* [ Authentication And Authorization ](#Authentication-And-Authorization )
+<br/>
+<br/>
 
 
-* [➤ Social Authentication  ](#Social-Authentication )
+15. [➤ Social Authentication  ](#Social-Authentication )
 	* [ Creating Credentials on Google ](#Creating-Credentials-on-Google )
 	* [ Social Authentication:: How does it work ](#Social-Authentication::-How-does-it-work )
 	* [Setting up Passport - Google - OAuth  ](#Setting-up-Passport---Google---OAuth )
 	* [ Using Google Auth:: With a Link ](#Using-Google-Auth::-With-a-Link )
+<br/>
+<br/>
  
-* [ ➤ Parallel Jobs + Mailer  ](#Parallel-Jobs-+-Mailer- )
+16. [ ➤ Parallel Jobs + Mailer  ](#Parallel-Jobs-+-Mailer- )
 	* [Setting Up Nodemailer  ](#Setting-Up-Nodemailer )
 	* [ Sending Our First Email via SMTP ](#Sending-Our-First-Email-via-SMTP )
   * [ Send HTML Template Emails ](#Send-HTML-Template-Emails )
@@ -204,17 +238,21 @@ are built to handle specific development aspects of an application.
         * [Installing and Understand KUE ](#Installing-and-Understand-KUE ) 
 	* [Setting KUE and Using It  ](#Setting-KUE-and-Using-It )
 
+<br/>
+<br/>
 
 
-* [ ➤  Friends + Likes ](#Friends-+-Likes )
+17. [ ➤  Friends + Likes ](#Friends-+-Likes )
 	* [ Polymorphic Relations ](#Polymorphic-Relations )
 	* [ Schema Setup:: Likes ](#Schema-Setup::-Likes )
 * [Actions and Routes:: Likes  ](#Actions-and-Routes::-Likes  )
 	* [ Making Friendships ](#Making-Friendships )
 	* [Understanding the Code:: Friendship  ](#Understanding-the-Code::-Friendship ) 
+<br/>
+<br/>
 
 
-* [ ➤ Chatting Engine  ](#Chatting-Engine  )
+18. [ ➤ Chatting Engine  ](#Chatting-Engine  )
 	* [ Reaching Sockets ](#Reaching-Sockets )
 	* [  Understanding the Chat Box](#Understanding-the-Chat-Box )
   * [ Setting Up Socket.io ](#Setting-Up-Socket.io-)
@@ -222,6 +260,8 @@ are built to handle specific development aspects of an application.
 	* [ Time to Create and Join Chat Rooms ](#Time-to-Create-and-Join-Chat-Rooms) 
 	* [ Finally, Let’s Send and Receive Messages. ](#Finally,-Let’s-Send-and-Receive-Messages )
   
+<br/>
+<br/>
 
 
 
@@ -257,6 +297,3 @@ This getting started guide is super quick! Follow these two steps and you will h
 
  
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#getting-started-slower)
-  
