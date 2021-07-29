@@ -21,7 +21,7 @@ Here are some required future like
 <li>f)profile page contain about user,photos, email id and many more
 <li>g)Reactions to Posts and Comments</b></br>
 
-  <sub>
+  
 Start with most important part in code is authentication in  code,whenever we tried login 
 or sign up in page ,you get too the some data is specific  for you only and your email or
  your on wall render on filed,this is possible beacuse you logged in as you ,you establish
@@ -35,7 +35,7 @@ have to delete comment which  not,more  over user can edit his/her name ,change 
 email and <h2>a many more functinally are done in this project. </h2>
 </p>
 
-<sub>
+ 
 </p>
 
 <br />
