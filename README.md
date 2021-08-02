@@ -2123,10 +2123,10 @@ module.exports = {
 The triggering point of mail is whenever one user comments on someone’s posts, let
 the mail come to the user itself who is commenting in the initial stage. Later, send
 that mail to the user who has posted the post.
-● We will create a new folder { mailers }, and inside it a new file {
+-  We will create a new folder { mailers }, and inside it a new file {
 comments_mailer.js }.
-● We need to import nodemailer inside the { comments_mailer.js } file.
-● We need to create a function that will create the mail.
+-  We need to import nodemailer inside the { comments_mailer.js } file.
+-  We need to create a function that will create the mail.
 
 { comments_mailer.js }
 ```node
@@ -2384,3 +2384,190 @@ module.exports.create = async function(req, res){
  
 ```
 
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#Authentication Using Passport)
+
+# ➤    Chatting Engine
+### Reaching Sockets
+ { Views / chat_box.ejs }
+ ```node
+<!-- CHANGE :: Creat the code for chat box -->
+<% if (locals.user){ %>
+	<div id="user-chat-box" class="container gradient-border chat-history">
+		<ul id="chat-messages-list" class="">
+			<li class="other-message  ">
+				<span>Other Message</span>
+			</li>
+			<li class="self-message">
+				<span>
+					Self Message
+				</span>
+				
+			</li>
+
+		</ul>
+		<div id="chat-message-input-container">
+			<input id="chat-message-input" placeholder="Type message here">
+			<button id="send-message">Send</button>
+		</div>
+	</div>
+<% } %>
+
+
+<!-- desgin chat box -->
+
+
+ ```
+ ### Beginning the Initial Connection
+{ chat_sockets.js }
+```node
+
+module.exports.chatSockets = function(socketServer){
+    let io = require('socket.io')(socketServer);
+
+    io.sockets.on('connection', function(socket){
+        console.log('new connection received', socket.id);
+
+        socket.on('disconnect', function(){
+            console.log('socket disconnected!');
+        });
+
+        
+        socket.on('join_room', function(data){
+            console.log('joining request rec.', data);
+
+            socket.join(data.chatroom);
+
+            io.in(data.chatroom).emit('user_joined', data);
+        });
+
+        // CHANGE :: detect send_message and broadcast to everyone in the room
+        socket.on('send_message', function(data){
+            io.in(data.chatroom).emit('receive_message', data);
+        });
+
+    });
+
+}
+```
+
+{ chat_engine.js }
+``` node
+class ChatEngine{
+    constructor(chatBoxId, userEmail,userName){
+        this.chatBox = $(`#${chatBoxId}`);
+        this.userEmail = userEmail;
+        this.userName = userName;
+
+        this.socket = io.connect('http://localhost:5000');
+
+        if (this.userEmail){
+            this.connectionHandler();
+        }
+
+    }
+
+
+    
+```
+### Time to Create and Join Chat Rooms
+ Whenever two or more users are chatting with each other, we create a virtual
+environment that is called a Chat Room.
+-  There is an array of id’s and emails wherein a user’s email and unique ids are stored
+for a particular chatbox.
+-  One socket connection can hold multiple sockets.
+-  Whenever a user is connected or clicks a specific name, the user will ask to start a
+chat with that specific user.
+-  We will send a request to the other user and we receive an acknowledgment of that
+sent-in request. Whenever the other user also comes online or joins the room we
+will receive a notification.
+
+
+```node
+connectionHandler(){
+        let self = this;
+
+        this.socket.on('connect', function(){
+            console.log('connection established using sockets...!');
+
+
+            self.socket.emit('join_room', {
+                user_email: self.userEmail,
+                user_name: self.userName,
+                chatroom: 'codeial'
+            });
+
+            self.socket.on('user_joined', function(data){
+                console.log('a user joined!', data);
+            })
+
+
+        });
+
+        // CHANGE :: send a message on clicking the send message button
+        $('#send-message').click(function(){
+            let msg = $('#chat-message-input').val();
+
+            if (msg != ''){
+                self.socket.emit('send_message', {
+                    message: msg,
+                    user_email: self.userEmail,
+                    user_name: self.userName,
+                    chatroom: 'codeial'
+                });
+               
+            }
+        });
+
+       
+    }
+}
+```
+### Finally, Let’s Send and Receive Messages.
+```node
+ self.socket.on('receive_message', function(data){
+            console.log('message received', data.message);
+
+
+            let newMessage = $('<li>');
+
+            let messageType = 'other-message';
+
+            if (data.user_email == self.userEmail){
+                messageType = 'self-message';
+            }
+            
+            newMessage.append($('<span>', {
+                'html': data.message
+            }));
+
+            newMessage.append($('<sub>', {
+                'html': data.user_name
+            }));
+
+            newMessage.addClass(messageType);
+
+            $('#chat-messages-list').append(newMessage);
+        })
+```
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#Authentication Using Passport)
+
+# ➤   Using  
+Button used for clicking!
+
+### 
+
+| Property   | Attribute  | Type      | Default  | Description           |
+|------------|------------|-----------|----------|-----------------------|
+| `disabled` | `disabled` | `boolean` | false    | Disables the element. |
+| `role`     | `role`     | `string`  | "button" | Role of the element.  |
+
+###  
+
+| Name | Description     |
+|------|-----------------|
+|      |   Mohammad Shahansha |
+
+ 
